@@ -1,0 +1,40 @@
+from enum import Enum
+
+class Currency(Enum):
+    USD = "United States Dollar", "$"
+    EUR = "Euro", "€"
+    GBP = "British Pound Sterling", "£"
+    JPY = "Japanese Yen", "¥"
+    CNY = "Chinese Yuan", "¥"
+    INR = "Indian Rupee", "₹"
+    BRL = "Brazilian Real", "R$"
+    CAD = "Canadian Dollar", "C$"
+    AUD = "Australian Dollar", "A$"
+    CHF = "Swiss Franc", "CHF"
+    SEK = "Swedish Krona", "kr"
+    NZD = "New Zealand Dollar", "NZ$"
+    KRW = "South Korean Won", "₩"
+    SGD = "Singapore Dollar", "S$"
+    MXN = "Mexican Peso", "Mex$"
+    RUB = "Russian Ruble", "₽"
+    ZAR = "South African Rand", "R"
+    TRY = "Turkish Lira", "₺"
+    HKD = "Hong Kong Dollar", "HK$"
+    NOK = "Norwegian Krone", "kr"
+    DKK = "Danish Krone", "kr"
+    PLN = "Polish Złoty", "zł"
+    THB = "Thai Baht", "฿"
+    IDR = "Indonesian Rupiah", "Rp"
+    MYR = "Malaysian Ringgit", "RM"
+    PHP = "Philippine Peso", "₱"
+    SAR = "Saudi Riyal", "﷼"
+    AED = "United Arab Emirates Dirham", "د.إ"
+    ILS = "Israeli New Shekel", "₪"
+    ARS = "Argentine Peso", "$"
+    CLP = "Chilean Peso", "$"
+    COP = "Colombian Peso", "$"
+    PEN = "Peruvian Sol", "S/"
+
+    def __init__(self, full_name, symbol):
+        self.full_name = full_name
+        self.symbol = symbol
